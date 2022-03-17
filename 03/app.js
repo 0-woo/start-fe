@@ -103,4 +103,41 @@ test2();
 function test2() {
     console.log('test');
 }
+//quiz
+
+var result = 0;
+for (var a=0; a<count.length;a++){
+    result = result + count[i]
+}
+console.log(result/count.length);
+
+for(var a=1;a<10;a++){
+    for(var b=1; b<10;b++){
+        console.log(`${a} * ${b}=${a*b}`);
+}
+}
+
+function multi(){
+    for(var a=1;a<10;a++){
+        for(var b=1; b<10;b++){
+            console.log(`${a} * ${b}=${a*b}`);
+    }
+}
+}
+multi();
+
+var person={
+    name : 'cho',
+    age :26,
+    gender : 'male',
+    Information  : function(){
+        return this.name + this.age+ this.gender;
+    }
+}
+console.log(person.Information());
+
+var num1 = window.prompt('입력해주세요','0');
+var num2 = window.prompt('입력해주세요','0');
+console.log(Number(num1)+Number(num2));
+
 
