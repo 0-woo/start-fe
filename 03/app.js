@@ -140,4 +140,32 @@ var num1 = window.prompt('입력해주세요','0');
 var num2 = window.prompt('입력해주세요','0');
 console.log(Number(num1)+Number(num2));
 
+var todo=['운동','게임']
+var count = [0,1,23,11]
 
+function cArr(arr,add){
+    arr.push(add)
+}
+
+function rArr(arr){
+    arr.forEach(e=>{
+        console.log(e)
+    })
+}
+
+function  uArr(arr,exist,change){
+    var newArr = arr.map(params =>{
+        if (params === exist){
+            return change
+        }
+        return params
+    })
+    console.log(newArr)
+}
+
+function dArr(arr,del){
+    var newArr = arr.filter(params=>{
+        return params !== del
+    })
+    console.log(newArr)
+}
