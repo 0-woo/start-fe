@@ -12,7 +12,7 @@ const result = document.querySelector('#result');
 btn.addEventListener('click', (e)=>{
    result.innerHTML = "";
    const inputValue = num.value;
-   console.log(Number(inputValue));
+   // console.log(Number(inputValue));
    if(Number(inputValue)===0){
       alert("alert");
       return;
